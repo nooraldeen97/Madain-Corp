@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lato:wght@300&family=Playfair+Display+SC&display=swap');
+
+body{
+    background: linear-gradient(90deg, #5DA7DB 0%, whitesmoke 19%, whitesmoke 48%, whitesmoke 85%, #5DA7DB 100%);
+    background-attachment: fixed;
+    font-family:"IBM Plex Sans" ;
+}
+
+button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#resultDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.childDiv{
+    position: relative;
+    height: 160px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 1px rgb(45 35 66 / 30%) solid;
+    margin-top: 25px;
+    box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
+}
+
+
+.childDiv h3{
+    position: absolute;
+    top: 55%;
+    right: 6%;
+    background-color: #82C3EC;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+    font-weight: 300;
+    color: rgb(72, 72, 72);
+}
+
+
+.childDiv h1{
+    position: absolute;
+    top: 17%;
+    left: 6%;
+    background-color: #472183;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.childDiv h4{
+    position: absolute;
+    top: 29%;
+    left: 16%;
+}
